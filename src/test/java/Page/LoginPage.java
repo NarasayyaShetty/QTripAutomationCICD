@@ -30,7 +30,8 @@ public class LoginPage {
 	
 	@FindBy(xpath="//button[normalize-space(text())='Login to QTrip']")
 	private WebElement loginButton;
-	
+        
+	//verifys the login page or not
 	public boolean validateLoginPage() {
 		boolean flag=false;
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
@@ -46,7 +47,7 @@ public class LoginPage {
 		}
 		return flag;
 	}
-	
+	//meke the login using newly created credentials
 	public boolean makeLogin(String email,String password) {
 		boolean flag=false;
 		try {

@@ -27,7 +27,7 @@ public class HomePage {
 	
 	@FindBy(linkText ="Register")
 	private WebElement registerButton;
-	
+	//verifys the homepage or not
 	public boolean homePageValidation() {
 		boolean flag=false;
 		
@@ -38,7 +38,7 @@ public class HomePage {
 		}
 		return flag;
 	}
-	
+	//clicks on register button
 	public boolean clickOnRegistarButton() {
 		boolean flag=false;
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
